@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a .fas {
+            margin-right: 0.5rem;
+        }
+
+        .section {
+            padding: 2rem 0;
+        }
+
+        #about {
+            background: #f4f4f4;
+        }
+
+        #portfolio {
+            background: #fff;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            width: 48%;
+            margin-bottom: 1rem;
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .portfolio-item h3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .portfolio-item h3 .fas {
+            margin-right: 0.5rem;
+        }
+
+        #contact {
+            background: #f4f4f4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 0.7rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p .fas {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Thiago Lazzarin</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i>Sobre</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfólio</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre mim!</h2>
+            <p>Um curioso nato, estagiário da PMSC e iniciando no ramo da programação!</p>
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    
+                    <h3><i class="fas fa-book"></i>Projeto 1</h3>
+                    <p>Curso de Inglês Básico: Desenvolvi um curso online para iniciantes no aprendizado da língua inglesa, abordando gramática, vocabulário e pronúncia.</p>
+                </div>
+                <div class="portfolio-item">
+                    
+                    <h3><i class="fas fa-chalkboard-teacher"></i>Projeto 2</h3>
+                    <p>Curso de Inglês Avançado: Criei um curso avançado para quem já possui um bom domínio do inglês, focando em habilidades de conversação, escrita acadêmica e compreensão auditiva.</p>
+                </div>
+                <!-- Adicione mais itens do portfólio conforme necessário -->
+                <div class="portfolio-item">
+                    
+                    <h3><i class="fas fa-headset"></i>Projeto 3</h3>
+                    <p>Curso de Inglês para Negócios: Desenvolvi um curso especializado em inglês para o ambiente corporativo, incluindo vocabulário específico, redação de e-mails e habilidades de apresentação.</p>
+                </div>
+                <div class="portfolio-item">
+                    
+                    <h3><i class="fas fa-graduation-cap"></i>Projeto 4</h3>
+                    <p>Preparatório para Exames de Proficiência: Ofereci um curso preparatório para exames como TOEFL e IELTS, com foco em estratégias de prova e prática intensiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Thiago Lazzarin. Todos os direitos reservados. <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+</body>
+</html>
